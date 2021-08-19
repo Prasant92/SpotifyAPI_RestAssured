@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="BaseURISpotify" value="https://accounts.spotify.com" />
+	<parameter name="BaseURISpotifyForGetProfile" value="https://api.spotify.com" />
+	
+	<parameter name="BasePathTokenRefresh" value="/api/token" />
+	<parameter name="BasePathForSelfProfile" value="/v1/me" />
+	<parameter name="BasePathForSelfPlaylist" value="/v1/me/playlists" />
+	<parameter name="BasePathForGettingAllGenres" value="/v1/recommendations/available-genre-seeds" />
+	<parameter name="BasePathForGettingAllCategories" value="/v1/browse/categories" />
+	<parameter name="BasePathForGettingFeaturedPlaylist" value="/v1/browse/featured-playlists" />
+	<parameter name="BasePathForSearchingSongTrack" value="/v1/search" />
+	<parameter name="BasePathForCreatingPlaylist" value="v1/users/kphy7tq88yw5z6a7qokev1xdx/playlists" />
+	<parameter name="BasePathForAddingSongsToUserPlaylist" value="/v1/playlists" />
+	
+	<parameter name="Client_ID" value="25cdd38bbd4d441ba78f9d5284df4159" />
+	<parameter name="Grant_type" value="refresh_token" />
+	<parameter name="Client_Secret" value="f059a033162d45e7b6c88b61d2406452" />
+	<parameter name="Ref_Token" value="AQBfFCn1AipV7vFQIb3Cyo6DWs5_m106BEuDYj80EENjvI6DM1kFpHpB-2xtv91uZ288QvyG-rVPe5eXwJVCI1BUUQ6h7J5RYukIbR1jrBTne0JQ9x3Sku5S_54o-9YhGmM" />
+  	<parameter name="Authorization" value="Bearer BQDm7FcZo8qjZp6MJk40N-HaeZf44ivu5Lo5SBcuLRZxIklUWGt6iYpsr2c4flhLB3c8UtuYx23tVlpJnp2TjPo0RZr8xSoZx-o3GxsLNHz_cc_a-3NwyDI2Uko_7WsByVJIlqde2kVOQT51nJE7euvCtwwluDw7FhfLyXFhQmXMFVGLNgVcpnX5ItwGMr2SfuC3bsCUiXLnSU5h_53Dpd8tNaZOpeXWbr_akSHsfOnj" />	
+  	
+  	<parameter name="DatafilePath" value="src/main/resources/DataFiles/ReorderingPlaylistTracks.json" />
+  	<parameter name="SpotifyUSerID" value="kphy7tq88yw5z6a7qokev1xdx" />
+  	<parameter name="CountryCode" value="IN" />
+  	<parameter name="CategoryID" value="devotional" />
+  	<parameter name="QueryName" value="Ay Pilla Haricharan" />
+  	<parameter name="Type" value="track" />
+  	<parameter name="Limit" value="10" />
+  	<parameter name="Include_External" value="No" />
+  	<parameter name="Playlist_id" value="6u86QJxVz0aK3XHexo9RPk" />
+  	<parameter name="FilterOutSongsFromPlaylistQuery" value="items.track.album(!available_markets,artists,external_ids,external_urls)" />
+  	
+  		<test thread-count="5" name="Test">
+  			<classes>
+  				<class name="com.Rest.Spotify_PlaylistsAPI.RequestPUTReorderUserPlaylistItems">
+				</class>
+			</classes>
+  		</test> 
+</suite> 	

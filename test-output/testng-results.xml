@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="15931" started-at="2021-08-18T14:10:48 IST" finished-at="2021-08-18T14:11:04 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="15931" started-at="2021-08-18T14:10:48 IST" finished-at="2021-08-18T14:11:04 IST">
+      <class name="com.Rest.Spotify_PlaylistsAPI.RequestPUTReorderUserPlaylistItems">
+        <test-method status="PASS" signature="preCondition(java.lang.String, java.lang.String)[pri:0, instance:com.Rest.Spotify_PlaylistsAPI.RequestPUTReorderUserPlaylistItems@7fdd33]" name="preCondition" is-config="true" duration-ms="1207" started-at="2021-08-18T14:10:48 IST" finished-at="2021-08-18T14:10:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://api.spotify.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bearer BQDm7FcZo8qjZp6MJk40N-HaeZf44ivu5Lo5SBcuLRZxIklUWGt6iYpsr2c4flhLB3c8UtuYx23tVlpJnp2TjPo0RZr8xSoZx-o3GxsLNHz_cc_a-3NwyDI2Uko_7WsByVJIlqde2kVOQT51nJE7euvCtwwluDw7FhfLyXFhQmXMFVGLNgVcpnX5ItwGMr2SfuC3bsCUiXLnSU5h_53Dpd8tNaZOpeXWbr_akSHsfOnj]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="orderBeforeRearranging(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.Rest.Spotify_PlaylistsAPI.RequestPUTReorderUserPlaylistItems@7fdd33]" name="orderBeforeRearranging" duration-ms="9045" started-at="2021-08-18T14:10:50 IST" finished-at="2021-08-18T14:10:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[items.track.album(!available_markets,artists,external_ids,external_urls)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[/v1/playlists]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[6u86QJxVz0aK3XHexo9RPk]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderBeforeRearranging -->
+        <test-method status="PASS" signature="rearranagePlaylistTracks(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.Rest.Spotify_PlaylistsAPI.RequestPUTReorderUserPlaylistItems@7fdd33]" name="rearranagePlaylistTracks" duration-ms="534" started-at="2021-08-18T14:10:59 IST" finished-at="2021-08-18T14:10:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/main/resources/DataFiles/ReorderingPlaylistTracks.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/v1/playlists]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[6u86QJxVz0aK3XHexo9RPk]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rearranagePlaylistTracks -->
+        <test-method status="PASS" signature="orderAfterRearranging(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.Rest.Spotify_PlaylistsAPI.RequestPUTReorderUserPlaylistItems@7fdd33]" name="orderAfterRearranging" duration-ms="5055" started-at="2021-08-18T14:10:59 IST" finished-at="2021-08-18T14:11:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[items.track.album(!available_markets,artists,external_ids,external_urls)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[/v1/playlists]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[6u86QJxVz0aK3XHexo9RPk]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderAfterRearranging -->
+      </class> <!-- com.Rest.Spotify_PlaylistsAPI.RequestPUTReorderUserPlaylistItems -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

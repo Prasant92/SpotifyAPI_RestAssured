@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\Dell\eclipse-workspace\SpotifyAPIServicesUsingOAuth\src\main\resources\TestNG.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.Rest.Spotify_PlaylistsAPI.RequestPUTReorderUserPlaylistItems" hash-for-method="orderAfterRearranging(items.track.album(!available_markets,artists,external_ids,external_urls), 10, /v1/playlists, 6u86QJx...)">orderAfterRearranging(items.track.album(!available_markets,artists,external_ids,external_urls), 10, /v1/playlists, 6u86QJx...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.Rest.Spotify_PlaylistsAPI.RequestPUTReorderUserPlaylistItems" hash-for-method="orderBeforeRearranging(items.track.album(!available_markets,artists,external_ids,external_urls), 10, /v1/playlists, 6u86QJx...)">orderBeforeRearranging(items.track.album(!available_markets,artists,external_ids,external_urls), 10, /v1/playlists, 6u86QJx...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.Rest.Spotify_PlaylistsAPI.RequestPUTReorderUserPlaylistItems" hash-for-method="rearranagePlaylistTracks(src/main/resources/DataFiles/ReorderingPlaylistTracks.json, /v1/playlists, 6u86QJxVz0aK3XHexo9RPk)">rearranagePlaylistTracks(src/main/resources/DataFiles/ReorderingPlaylistTracks.json, /v1/playlists, 6u86QJxVz0aK3XHexo9RPk)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Rest.Spotify_PlaylistsAPI.RequestPUTReorderUserPlaylistItems</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="orderAfterRearranging(items.track.album(!available_markets,artists,external_ids,external_urls), 10, /v1/playlists, 6u86QJx...)">
+                  </a> <!-- orderAfterRearranging(items.track.album(!available_markets,artists,external_ids,external_urls), 10, /v1/playlists, 6u86QJx...) -->
+                  <span class="method-name">orderAfterRearranging</span>
+                  <span class="parameters">(items.track.album(!available_markets,artists,external_ids,external_urls), 10, /v1/playlists, 6u86QJxVz0aK3XHexo9RPk)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="orderBeforeRearranging(items.track.album(!available_markets,artists,external_ids,external_urls), 10, /v1/playlists, 6u86QJx...)">
+                  </a> <!-- orderBeforeRearranging(items.track.album(!available_markets,artists,external_ids,external_urls), 10, /v1/playlists, 6u86QJx...) -->
+                  <span class="method-name">orderBeforeRearranging</span>
+                  <span class="parameters">(items.track.album(!available_markets,artists,external_ids,external_urls), 10, /v1/playlists, 6u86QJxVz0aK3XHexo9RPk)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rearranagePlaylistTracks(src/main/resources/DataFiles/ReorderingPlaylistTracks.json, /v1/playlists, 6u86QJxVz0aK3XHexo9RPk)">
+                  </a> <!-- rearranagePlaylistTracks(src/main/resources/DataFiles/ReorderingPlaylistTracks.json, /v1/playlists, 6u86QJxVz0aK3XHexo9RPk) -->
+                  <span class="method-name">rearranagePlaylistTracks</span>
+                  <span class="parameters">(src/main/resources/DataFiles/ReorderingPlaylistTracks.json, /v1/playlists, 6u86QJxVz0aK3XHexo9RPk)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Dell\eclipse-workspace\SpotifyAPIServicesUsingOAuth\src\main\resources\TestNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;parameter name=&quot;BasePathForGettingAllGenres&quot; value=&quot;/v1/recommendations/available-genre-seeds&quot;/&gt;
+  &lt;parameter name=&quot;BaseURISpotify&quot; value=&quot;https://accounts.spotify.com&quot;/&gt;
+  &lt;parameter name=&quot;SpotifyUSerID&quot; value=&quot;kphy7tq88yw5z6a7qokev1xdx&quot;/&gt;
+  &lt;parameter name=&quot;BasePathForSearchingSongTrack&quot; value=&quot;/v1/search&quot;/&gt;
+  &lt;parameter name=&quot;BasePathForAddingSongsToUserPlaylist&quot; value=&quot;/v1/playlists&quot;/&gt;
+  &lt;parameter name=&quot;Authorization&quot; value=&quot;Bearer BQDm7FcZo8qjZp6MJk40N-HaeZf44ivu5Lo5SBcuLRZxIklUWGt6iYpsr2c4flhLB3c8UtuYx23tVlpJnp2TjPo0RZr8xSoZx-o3GxsLNHz_cc_a-3NwyDI2Uko_7WsByVJIlqde2kVOQT51nJE7euvCtwwluDw7FhfLyXFhQmXMFVGLNgVcpnX5ItwGMr2SfuC3bsCUiXLnSU5h_53Dpd8tNaZOpeXWbr_akSHsfOnj&quot;/&gt;
+  &lt;parameter name=&quot;BasePathForSelfProfile&quot; value=&quot;/v1/me&quot;/&gt;
+  &lt;parameter name=&quot;Client_ID&quot; value=&quot;25cdd38bbd4d441ba78f9d5284df4159&quot;/&gt;
+  &lt;parameter name=&quot;CountryCode&quot; value=&quot;IN&quot;/&gt;
+  &lt;parameter name=&quot;CategoryID&quot; value=&quot;devotional&quot;/&gt;
+  &lt;parameter name=&quot;Playlist_id&quot; value=&quot;6u86QJxVz0aK3XHexo9RPk&quot;/&gt;
+  &lt;parameter name=&quot;BasePathTokenRefresh&quot; value=&quot;/api/token&quot;/&gt;
+  &lt;parameter name=&quot;Ref_Token&quot; value=&quot;AQBfFCn1AipV7vFQIb3Cyo6DWs5_m106BEuDYj80EENjvI6DM1kFpHpB-2xtv91uZ288QvyG-rVPe5eXwJVCI1BUUQ6h7J5RYukIbR1jrBTne0JQ9x3Sku5S_54o-9YhGmM&quot;/&gt;
+  &lt;parameter name=&quot;Include_External&quot; value=&quot;No&quot;/&gt;
+  &lt;parameter name=&quot;Grant_type&quot; value=&quot;refresh_token&quot;/&gt;
+  &lt;parameter name=&quot;Client_Secret&quot; value=&quot;f059a033162d45e7b6c88b61d2406452&quot;/&gt;
+  &lt;parameter name=&quot;FilterOutSongsFromPlaylistQuery&quot; value=&quot;items.track.album(!available_markets,artists,external_ids,external_urls)&quot;/&gt;
+  &lt;parameter name=&quot;BasePathForSelfPlaylist&quot; value=&quot;/v1/me/playlists&quot;/&gt;
+  &lt;parameter name=&quot;BasePathForCreatingPlaylist&quot; value=&quot;v1/users/kphy7tq88yw5z6a7qokev1xdx/playlists&quot;/&gt;
+  &lt;parameter name=&quot;QueryName&quot; value=&quot;Ay Pilla Haricharan&quot;/&gt;
+  &lt;parameter name=&quot;Type&quot; value=&quot;track&quot;/&gt;
+  &lt;parameter name=&quot;BasePathForGettingAllCategories&quot; value=&quot;/v1/browse/categories&quot;/&gt;
+  &lt;parameter name=&quot;BaseURISpotifyForGetProfile&quot; value=&quot;https://api.spotify.com&quot;/&gt;
+  &lt;parameter name=&quot;DatafilePath&quot; value=&quot;src/main/resources/DataFiles/ReorderingPlaylistTracks.json&quot;/&gt;
+  &lt;parameter name=&quot;Limit&quot; value=&quot;10&quot;/&gt;
+  &lt;parameter name=&quot;BasePathForGettingFeaturedPlaylist&quot; value=&quot;/v1/browse/featured-playlists&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.Rest.Spotify_PlaylistsAPI.RequestPUTReorderUserPlaylistItems&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'orderBeforeRearranging')
+data.setCell(0, 2, 'com.Rest.Spotify_PlaylistsAPI.RequestPUTReorderUserPlaylistItems')
+data.setCell(0, 3, 9045);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'orderAfterRearranging')
+data.setCell(1, 2, 'com.Rest.Spotify_PlaylistsAPI.RequestPUTReorderUserPlaylistItems')
+data.setCell(1, 3, 5055);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'rearranagePlaylistTracks')
+data.setCell(2, 2, 'com.Rest.Spotify_PlaylistsAPI.RequestPUTReorderUserPlaylistItems')
+data.setCell(2, 3, 534);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Rest.Spotify_PlaylistsAPI.RequestPUTReorderUserPlaylistItems</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">preCondition(https://api.spotify.com, Bearer BQDm7FcZo8qjZp6MJk40N-HaeZf44ivu5Lo5SBcuLRZxIklUWGt6iYpsr2c4flhLB3c8...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">orderBeforeRearranging(items.track.album(!available_markets,artists,external_ids,external_urls), 10, /v1/playlists, 6u86QJx...)</span>
+                <span class="method-start">1247 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">rearranagePlaylistTracks(src/main/resources/DataFiles/ReorderingPlaylistTracks.json, /v1/playlists, 6u86QJxVz0aK3XHexo9RPk)</span>
+                <span class="method-start">10320 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">orderAfterRearranging(items.track.album(!available_markets,artists,external_ids,external_urls), 10, /v1/playlists, 6u86QJx...)</span>
+                <span class="method-start">10858 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
